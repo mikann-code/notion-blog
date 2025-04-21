@@ -11,7 +11,7 @@ export default function Home({ posts }) {
   return (
     <div>
       <Head>
-        <title>Notion Next.js blog</title>
+        <title>my notion blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -48,13 +48,13 @@ export default function Home({ posts }) {
               </g>
             </svg>
           </div>
-          <h1>Next.js + Notion API ブログ</h1>
+          <h1>プログラミング 記録blog</h1>
           <p>
-            Notionと連携しているブログです。Notionに書き込めばそのままブログとして投稿できます。
+            Notionと連携しているブログです。プログラミングの成長を記録しています。
           </p>
         </header>
 
-        <h2 className={styles.heading}>All Posts</h2>
+        <h2 className={styles.heading}>Posts</h2>
         <ol className={styles.posts}>
           {posts.map((post) => {
             const date = new Date(post.last_edited_time).toLocaleString(
